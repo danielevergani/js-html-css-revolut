@@ -26,10 +26,15 @@ nav{
     
 }
 
+img{
+    height: 100%;
+}
+
 .main_list{
     display: flex;
 }
 
-img{
-    height: 100%;
+.dropdown{
+    display: none;
 }
+
