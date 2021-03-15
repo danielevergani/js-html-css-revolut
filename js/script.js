@@ -12,9 +12,9 @@ $(function(){
         }
     }
 
-    $("a").click( ClickEnterBehaviour );
+    $(".list_wrapper > a").click( ClickEnterBehaviour );
 
-    $("a").mouseenter( ClickEnterBehaviour );
+    $(".list_wrapper > a").mouseenter( ClickEnterBehaviour );
 
     $(".dropdown").mouseover(
         function(){
@@ -29,13 +29,12 @@ $(function(){
         }
     )
 
-    
-
-    //   $(document).click(
-    //       function(event){
-    //           console.log(event);
-    //       }
-    //   );
+    $(document).click(
+        function(event){
+            console.log(event);
+        }
+    );
+     
  });
 
 
