@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: black;
+}
+
+.black_color{
+    color: black;
+}
+
 .list_none{
     list-style: none;
 }
@@ -51,5 +84,9 @@ img{
 .dropdown ul{
     position: absolute;
     top: 10px;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 15px;
+    
 }
 

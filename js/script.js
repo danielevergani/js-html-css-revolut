@@ -11,24 +11,31 @@ $(function(){
             $(this).next().addClass("dropdown_active");
         }
     }
-    
-    var a = 12;
 
     $("a").click( ClickEnterBehaviour );
 
     $("a").mouseenter( ClickEnterBehaviour );
 
-    $(".dropdown").mouseleave(
+    $(".dropdown").mouseover(
         function(){
-            $(".dropdown").removeClass("dropdown_active");
+            $(this).prev().addClass("black_color");
         }
     )
 
-      $(document).click(
-          function(event){
-              console.log(event);
-          }
-      );
+    $(".dropdown").mouseleave(
+        function(){
+            $(".dropdown").removeClass("dropdown_active");
+            $(this).prev().removeClass("black_color");
+        }
+    )
+
+    
+
+    //   $(document).click(
+    //       function(event){
+    //           console.log(event);
+    //       }
+    //   );
  });
 
 
