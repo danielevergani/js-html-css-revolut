@@ -1,25 +1,37 @@
-$("a").click(
-    function (){
-        ClickEnterBehaviour();
-    }
-);
+$(function(){
 
-$("a").mouseenter(
-    function (){
-        ClickEnterBehaviour();
-    }
-);
+    function ClickEnterBehaviour(){
 
-function ClickEnterBehaviour(){
+        if ( $(this).next().hasClass("dropdown_active") ) {
+            $(".dropdown").removeClass("dropdown_active");
+            $(this).next().removeClass("dropdown_active");
+        }
+        else {
+            $(".dropdown").removeClass("dropdown_active");
+            $(this).next().addClass("dropdown_active");
+        }
+    }
+    
+    var a = 12;
 
-    if ( $(this).next().hasClass("dropdown_active") ) {
-        $(".dropdown").removeClass("dropdown_active");
-        $(this).next().removeClass("dropdown_active");
-    }
-    else {
-        $(".dropdown").removeClass("dropdown_active");
-        $(this).next().addClass("dropdown_active");
-    }
-}
+    $("a").click( ClickEnterBehaviour );
+
+    $("a").mouseenter( ClickEnterBehaviour );
+
+    $(".dropdown").mouseleave(
+        function(){
+            $(".dropdown").removeClass("dropdown_active");
+        }
+    )
+
+      $(document).click(
+          function(event){
+              console.log(event);
+          }
+      );
+ });
+
+
+
 
 
