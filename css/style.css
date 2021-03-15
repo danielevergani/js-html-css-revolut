@@ -26,15 +26,30 @@ nav{
     
 }
 
+nav ul li:not(:last-child){
+    margin-right: 30px;;
+}
+
 img{
     height: 100%;
 }
 
 .main_list{
     display: flex;
+    align-items: center;
 }
 
 .dropdown{
     display: none;
+    position: relative;
+}
+
+.dropdown_active{
+    display: block;
+}
+
+.dropdown ul{
+    position: absolute;
+    top: 10px;
 }
 
