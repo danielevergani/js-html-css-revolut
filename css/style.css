@@ -91,3 +91,7 @@ img{
     box-shadow: 0px 4px 10px lightgrey;
 }
 
+.dropdown ul li{
+    padding: 10px 0 10px 0;
+}
+
