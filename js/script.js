@@ -29,11 +29,11 @@ $(function(){
         }
     )
 
-    $(document).click(
-        function(event){
-            console.log(event);
-        }
-    );
+    // $(document).click(
+    //     function(event){
+    //         console.log(event);
+    //     }
+    // );
      
  });
 
