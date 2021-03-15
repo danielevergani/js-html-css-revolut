@@ -1,3 +1,35 @@
-body{
-    background-color: red;;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list_none{
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    
+}
+
+.main_list{
+    display: flex;
+}
+
+img{
+    height: 100%;
 }
