@@ -1,7 +1,7 @@
 $(function(){
 
     function ClickEnterBehaviour(){
-
+        
         if ( $(this).next().hasClass("dropdown_active") ) {
             $(".dropdown").removeClass("dropdown_active");
             $(this).next().removeClass("dropdown_active");
@@ -28,6 +28,8 @@ $(function(){
             $(this).prev().removeClass("black_color");
         }
     )
+
+
 
     // $(document).click(
     //     function(event){
